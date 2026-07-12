@@ -18,3 +18,12 @@ Print A, B, and C separated by spaces.
 
 ### Problem credits: Benjamin Qi 
 ## Algorithm :
+Read the seven integers into a list.
+Sort the list in increasing order.
+We know, A+B+C is always ≥ every other quantity (A, B, C, A+B, B+C, C+A), since it's the sum of all three positive numbers — so it must be the maximum value in the list, and A is always ≤ every other quantity, since A ≤ B ≤ C and adding positive numbers only increases values — so A must be the minimum value in the list.
+We also know B is always ≤ every remaining quantity except A, since B ≤ C, and B plus any positive number is still ≥ B — so B must be the second-smallest value in the list.
+A = smallest element (nums[0]).
+B = second-smallest element (nums[1]).
+C = largest element (nums[6]) minus A minus B, since the largest element equals A+B+C.
+Print A, B, C.
+
